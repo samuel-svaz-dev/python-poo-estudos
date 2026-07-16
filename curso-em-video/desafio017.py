@@ -14,7 +14,7 @@ class Produto:
     def etiqueta(self):
         linha = '-' * 35
         preco_formatado = f'R${self.preco}'
-        mostra = Panel(f'{self.nome} {linha} {preco_formatado}', title = 'Produto', width = 40)
+        mostra = Panel(f'{self.nome} \n {linha} \n {preco_formatado}'.center(60), title = 'Produto', width = 40)
         print(mostra)
     
 

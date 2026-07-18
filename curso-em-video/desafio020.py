@@ -19,7 +19,7 @@ class Gamer:
 
 
     def ficha(self):
-        formatado = ':video_game:\n'.join(self.jogos_fav)
+        formatado = '\n'.join(self.jogos_fav)
         mostra = Panel(f'Nome Real: [white on blue]{self.nome}[/]'
                        f'\nJogos Favoritos: '
                        f'\n:video_game: [blue]{formatado}[/]'

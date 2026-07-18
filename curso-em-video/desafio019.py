@@ -10,7 +10,7 @@ class Livro:
         self.titulo = titulo
         self.paginas = paginas
         self.pg_atual = 1
-        print(f':book:Você acabou de abrir o livro [red]{self.titulo}[/] que tem [green]{self.paginas}'
+        print(f':book: Você acabou de abrir o livro [red]{self.titulo}[/] que tem [green]{self.paginas}'
               f' páginas[/] no total. Você está na [yellow]página 1[/]')
 
 
@@ -25,7 +25,7 @@ class Livro:
                 break
         print(f' [blue]Você avançou {cont} páginas e agora está na[/] [yellow]página {self.pg_atual}[/].')
         if self.pg_atual == self.paginas:
-            print(f':closed_book:[red]Você chegou ao final do livro {self.titulo}.[/]')
+            print(f':closed_book: [red]Você chegou ao final do livro {self.titulo}.[/]')
 
 
 

@@ -12,10 +12,12 @@ class Produto:
 
     
     def etiqueta(self):
-        linha = '-' * 35
-        preco_formatado = f'R${self.preco}'
-        mostra = Panel(f'{self.nome} \n {linha} \n {preco_formatado}', title = 'Produto', width = 40)
-        print(mostra)
+        conteudo = f"{self.nome.center(30, ' ')}"
+        conteudo += f"{'-' * 30}"
+        preco_formatado = f"R${self.preco:.2f}"
+        conteudo += f"{preco_formatado.center(30, '.')}"
+        card = Panel(conteudo, title = 'Produto', width = 34)
+        print(card)
     
 
 p1 = Produto('Iphone 17 Pro Max', 25_000.85)

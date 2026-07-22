@@ -16,7 +16,7 @@ class Produto:
         conteudo += f"{'-' * 30}"
         preco_formatado = f"R${self.preco:.2f}"
         conteudo += f"{preco_formatado.center(30, '.')}"
-        card = Panel(conteudo, title = 'Produto', width = 34)
+        card = Panel(conteudo, title = 'Produto', width = 34) #AJUSTES COM BASE NA AULA
         print(card)
     
 
